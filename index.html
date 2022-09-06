@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="em">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">Ear Survey</h1>
+      <p id="description">A series of questions about your ears.</p>
+    </div>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name">Name 
+          <input id="name" name="name" type="text" placeholder="Your Name" required />
+        </label>
+        <label id="email-label" for="email">Email 
+          <input id="email" name="email" type="email" placeholder="name@domain.com" required />
+        </label>
+        <label id="number-label" for="number">How many ears do you have?
+          <input id="number" name="number" type="number" min="0" max="2" placeholder="Number of Ears"/>
+        </label>
+        <label> Do your ears hang...
+          <select id="dropdown">
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <label>Do your ears wobble...</label>
+        <label for="to">
+          <input id="to" type="radio" name="wobble" class="inline" value="to"/> 
+          to
+        </label>
+        <label for="fro">
+          <input id="for" type="radio" name="wobble" class="inline" value="fro"/>
+          fro
+        </label>
+        <label>Which shoulder do you throw them over?</label>
+        <label for="left">
+          <input id="left" type="checkbox" name="shoulder" class="inline" value="left"/> 
+          left
+        </label>
+        <label for="right">
+          <input id="right" type="checkbox" name="shoulder" class="inline" value="right"/>
+          right
+        </label>
+        <textarea placeholder="List all the knots you can tie your ears in."></textarea>
+      </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+    <div>
+      <footer>
+          <p> Background Photo from 
+            <a href="https://www.exploratorium.edu/snacks/ear-sort" target="_blank">Here</a>
+          </p>
+      </footer>
+    </div>
+  </body>
+</html> 
